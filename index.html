@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My portfolio</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/jpeg" href="./images/favicon.png" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css"
+    integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css"
+    integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style shreet -->
+  <link rel="stylesheet" href="./files/home.css" />
+  <link rel="stylesheet" href="./files/responsive.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+  <!-- navbar -->
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="..." class="img-responsive" />
+        </a>
+        <div class="name">AnupDataInsights</div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-stream"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-nevbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#Project">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="main-btn" href="#contact">Hire me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- navbar section exit -->
+
+  <!-- banner section -->
+  <section id="home" class="banner_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center text-md-start mt-5">
+          <h6>WELCOME TO MY PORTFOLIO! </h6>
+          <h1>I'm Anup Kumar<br><span>a proficient Data Analyst.</span><br>Based in India </h1>
+          <div class="mt-4">
+            <img src="./images/download.png" class="anim" alt="Pointing Image" style="width: 200px; margin-left: -57px; padding: 2px; position: relative; top: 27px;">
+
+">
+            <a href="./images/Anup Kumar. Resume (DA).pdf" download target="_blank" class="main-btn" style=" margin-left: -30px;">
+            Download Resume</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- banner section exit -->
+
+  <!-- about section -->
+  <section id="about" class="about_wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-item-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="./images/Anup-removebg-preview.png" class="img-fluid image rounded-3" alt="about us"
+    style="width: 800px; margin-left: -30px;">
+
+
+
+
+        </div>
+        <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+          <span class="subtitle">My About Details</span>
+          <h2>About Me</h2><br>
+          <p> I am a results-driven Data Analyst with practical experience in data analysis, cleaning, and visualization
+            using tools like Python, SQL, and Power BI. I specialize in turning complex data into actionable insights to
+            support business strategies. My focus is on delivering accurate, data-driven solutions that improve
+            decision-making and drive performance.</p>
+          <div class="pt-4">
+            <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab"
+              role="tablist">
+              <!-- skill -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill"
+                  type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Main skill</button>
+              </li>
+              <!-- award -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Award-tab" data-bs-toggle="pill" data-bs-target="#pills-Award"
+                  type="button" role="tab" aria-controls="pills-Award" aria-selected="false">Awards</button>
+              </li>
+              <!-- experience -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience"
+                  aria-selected="false">Experience</button>
+              </li>
+              <!-- education -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education"
+                  aria-selected="false">Education</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <!-- skill div  -->
+              <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab"
+                tabindex="0">
+                <!-- progress bar start  -->
+                <!-- data analysis and visualization  -->
+                <div class="single-progress">
+                  <h6>Data Analysis and Visualization</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                  </div>
+                  <span class="label">90%</span>
+                </div>
+                <!-- end of DAV -->
+                <!-- pro Python  -->
+                <div class="single-progress">
+                  <h6>Python</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                  </div>
+                  <span class="label">90%</span>
+                </div>
+
+                <!-- pro Python end  -->
+                <!-- pro   power bi  -->
+                <div class="single-progress">
+                  <h6>power bi</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 95%">
+                    </div>
+                  </div>
+                  <span class="label">95%</span>
+                </div>
+                <!-- power bi end  -->
+                <!-- pro  SQL start  -->
+                <div class="single-progress">
+                  <h6> SQL</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 80%">
+                    </div>
+                  </div>
+                  <span class="label">80%</span>
+                </div>
+                <!--  SQL end  -->
+                <!-- pro Excel start  -->
+                <div class="single-progress">
+                  <h6>Excel</h6>
+                  <div class="progress" role="progressbar" aria-label="Development Progress" aria-valuenow="88"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 88%"></div>
+                  </div>
+                  <span class="label">88%</span>
+                </div>
+              </div>
+
+              <!-- award dev  -->
+              <div class="tab-pane fade" id="pills-Award" role="tabpanel" aria-labelledby="pills-Award-tab"
+                tabindex="0">.
+                <ul class="text-start ps-0">
+                  <li>
+                    <a href="./images/IIT Roorkee.jpeg" alt="...">
+                      Certification of Paper Presentation at IIT
+                      <span>Roorkee </span></a>March 2023
+                  </li>
+                  <li>
+                    <a href="./images/NIT Warangle.jpeg" alt="...">
+                      Certification of Paper Presentation at NIT
+                      <span>Warangal</span></a>June 2023
+                  </li>
+                  <li>
+                    <a href="#" alt="...">
+                      Certification Course of Blender at IIT
+                      <span>Bombay</span></a>June 2023
+                  </li>
+                  <li>
+                    <a href="#" alt="...">
+                      Certificate of participation.
+                      <span>Hero Campus challenge Season-8 Quiz
+                        Competition</span></a>2023
+                  </li>
+                </ul>
+              </div>
+              <!-- experience dev  -->
+              <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab"
+                tabindex="0">
+                <ul class="text-start start ps-0">
+
+                  <li><a href="#">Junior Business Analyst
+                      <span>UBOARD INDIA PVT LTD</span></a> February 2024 – April 2024 </li>
+                  <li><a href="#">Data Analyst Intern 
+                      <span>Oasis Infobyte</span></a> june 2023 – August 2023 </li>
+                </ul>
+              </div>
+              <!-- education dev  -->
+              <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab"
+                tabindex="0">
+                <ul class="text-start start ps-0">
+                  <li>
+                    <a href="https://mdu.ac.in/">Engineering
+                      <span>MAHARISHI DAYANAND UNIVERSITY</span>
+                    </a>
+                    2021 - 2025<br>
+                    8.5 CGPA
+                  </li>
+                  <li><a href="#">12th
+                      <span>SHRI DHODHNATH HIGH SCHOOL</span></a> 2019 - 2021 <br>
+                    80%</li>
+                  <li><a href="#">10th
+                      <span>SHRI DHODHNATH SCHOOL </span></a>2018 - 2019<br>
+                    84%
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- division end    -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- about section exit -->
+
+  <!-- portfolio section  -->
+  <section id="Project">
+    <section id="portfolio" class="porifolio_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="portHead"></div>
+          <div class="col-sm-12 text-center mb-4">
+            <span class="subtitle">My complete project</span>
+            <h2>my last project</h2>
+            <p>I’ve worked on dynamic data analysis projects, using Python, Pandas, SQL, and Power BI to uncover
+              insights, build interactive dashboards, and optimize business strategies for real-world impact.<br
+                class="d-none d-md-block">
+              However, most have undergone significant changes.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/Covid-19.png')"></span>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <h3 class="port-til">COVID19 Data Analysis</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/titanic.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">Exploring Titanic Dataset</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/Netflix.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">Netflix Data Analysis</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/IMDB-Movie.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">Box Office Movies Analysis</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/wicket_ana.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">Cricket Wicket Analysis</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/Hotel-booking.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">Exploring Hotel Cancellations: Causes, Locations, and Hotel Types</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/iphone-Sales-2024.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">iPhone Sales Analysis</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span style="background-image: url('./images/DiwaliSales.png')">
+              </span>
+            </div>
+            <div>
+              <h3 class="port-til">Diwali Sales Analysis</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-strat text-center">
+                <img src="./images/sev1.jpg" class="img-fluid mb-4" alt="...">
+                <h3 class="card-title">Finance Dashboard Overview</h3>
+                <p class="card-text">A comprehensive overview of total sales, units sold, and performance across
+                  segments, products, and countries for financial insights.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-strat text-center">
+                <img src="./images/sev2.jpg" class="img-fluid mb-4" alt="...">
+                <h3 class="card-title">Superstore Sales Dashboard</h3>
+                <p class="card-text">A concise overview of sales, profit, quantity, and shipping costs, with insights by
+                  region, shipping mode, and customer segment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-strat text-center">
+                <img src="./images/sev3.png" class="img-fluid mb-4" alt="...">
+                <h3 class="card-title">Ecommerce Sales Dashboard </h3>
+                <p class="card-text">A detailed overview of employee count, attrition rate, and key metrics by age,
+                  education, job role, and salary range.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-strat text-center">
+                <img src="./images/sev4.png" class="img-fluid mb-4" alt="...">
+                <h3 class="card-title">HR Analytics Dashboard</h3>
+                <p class="card-text">Monitors employee metrics, including count and attrition rates, while analyzing key
+                  factors such as age, education, job role, and salary to provide valuable workforce insights.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-strat text-center">
+                <img src="./images/election2024.png" class="img-fluid mb-4" alt="...">
+                <h3 class="card-title">2024 Election Analysis</h3>
+                <p class="card-text">A comprehensive analysis of the upcoming 2024 elections, focusing on key trends,
+                  voter behavior, and potential outcomes through data visualization and insights.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-strat text-center">
+                <img src="./images/election_ana_BJPandINC.png" class="img-fluid mb-4" alt="...">
+                <h3 class="card-title">BJP vs. INC: 2019 vs. 2024 Analysis</h3>
+                <p class="card-text">A detailed comparison of political parties based on 2019 and 2024 election data,
+                  highlighting voting patterns and public sentiment to understand the evolving political landscape. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- portfolio section exit -->
+
+  <!-- contact section -->
+  <section id="contact" class="contact_wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-item-center">
+        <div class="col-lg-6 order-2 order-lg-1 pe-lg-s text-lg-start text-center">
+          <h2>Hire Me.</h2>
+          <div class="row call_details mb-4">
+            <label class="col-sm-3 col-lg-4">Contact Number:</label>
+            <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+              <a href="tel:8873628665">8873628665</a>
+            </div>
+
+            <label class="col-sm-3 col-lg-4">Contact Email:</label>
+            <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+              <a href="mailto:anupsingh2353@gmail.com">anupsingh2353@gmail.com</a>
+            </div>
+          </div>
+          <form action="./files/submit.php" method="POST"> <!-- Ensure this path is correct -->
+            <div class="mb-4">
+              <input type="text" class="form-control" name="name" placeholder="Your Name" autocomplete="off" required>
+            </div>
+            <div class="mb-4">
+              <input type="number" class="form-control" name="phone" placeholder="Your Phone NO." autocomplete="off"
+                required>
+            </div>
+            <div class="mb-4">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" autocomplete="off"
+                required>
+            </div>
+            <div class="mb-4">
+              <textarea cols="40" rows="4" class="form-control" name="message" placeholder="Write something for me..."
+                id="message" autocomplete="off" required></textarea>
+            </div>
+            <button type="submit" class="main-btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
+          <img src="./images/anu.png" class="img-fluid rounded-3" alt="Animated GIF"
+    style="width: 600px; margin-top: -50px; margin-left: 90px; 
+    ">
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section exit  -->
+
+  <!-- footer section  -->
+  <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+    <div class="container">
+      <div class="row align-item-center">
+        <div class="col-lg-4 col-md-6 text-center text-mg-start">
+          <div class="footer-logo mb-3 mb-md-0">
+            <img src="./images/logo.png" class="footer_logo_img" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <ul
+            class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0">
+            <li>
+              <a href="#https://www.instagram.com/accounts/onetap/?next=%2F" alt="...">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li><a href="#" alt="...">
+                <i class="fab fa-twitter"></i>
+              </a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/anup-kumar-996360235/" alt="...">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Anupkumarrsing" alt="...">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="Copyright-text text-lg-start text-center mb-3 mb-lg-0">
+            <p class=" ">© 2024 <a href="#">Portfolio </a>Thank you </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section exit  -->
+
+  <!-- bootstrap js -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <!-- java script -->
+  <script src="./files/index.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+</body>
+
+</html>

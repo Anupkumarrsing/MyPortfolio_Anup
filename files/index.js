@@ -9,6 +9,36 @@ window.onscroll=function(){
     }
 }
 
+// animation 
+const typewriterElement = document.querySelector(".Typewriter__wrapper");
+const text = "a proficient Data Analyst.";
+let index = 0;
+let isDeleting = false;
+
+function typeWriter() {
+    typewriterElement.innerHTML = text.slice(0, index);
+
+    if (!isDeleting) {
+        if (index < text.length) {
+            index++;
+            setTimeout(typeWriter, 100);
+        } else {
+            isDeleting = true;
+            setTimeout(typeWriter, 1000); // Pause before deleting
+        }
+    } else {
+        if (index > 0) {
+            index--;
+            setTimeout(typeWriter, 50);
+        } else {
+            isDeleting = false;
+            setTimeout(typeWriter, 500); // Pause before typing again
+        }
+    }
+}
+
+typeWriter();
+
 
 // nav hide
 // let navBar=document.querySelectorAll(".nav-link");
@@ -18,6 +48,8 @@ window.onscroll=function(){
 //         navCollapse.classList.remove("show");
 //     })
 // })
+
+
 let navbarLinks = document.querySelectorAll('.nav-link'); // Line 1
 let navCollapse = document.querySelector('.navbar-collapse'); // Line 2
 

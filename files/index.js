@@ -12,27 +12,32 @@ window.onscroll=function(){
 // animation 
 document.addEventListener("DOMContentLoaded", function () {
     const typewriterElement = document.querySelector(".Typewriter__wrapper");
-    const text = "a proficient Data Analyst.";
-    let index = 0;
-    let isDeleting = false;
+    if (typewriterElement) {
+        // Your typewriter effect code here
+        const text = "a proficient Data Analyst.";
+        let index = 0;
+        let isDeleting = false;
 
-    function typeWriter() {
-        typewriterElement.innerHTML = text.slice(0, index);
-
-        if (!isDeleting && index < text.length) {
-            index++;
-            setTimeout(typeWriter, 100);
-        } else if (isDeleting && index > 0) {
-            index--;
-            setTimeout(typeWriter, 50);
-        } else {
-            isDeleting = !isDeleting;
-            setTimeout(typeWriter, isDeleting ? 1000 : 500);
+        function typeWriter() {
+            if (!isDeleting && index <= text.length) {
+                typewriterElement.innerHTML = text.slice(0, index);
+                index++;
+                setTimeout(typeWriter, 100);
+            } else if (isDeleting && index >= 0) {
+                typewriterElement.innerHTML = text.slice(0, index);
+                index--;
+                setTimeout(typeWriter, 50);
+            } else {
+                isDeleting = !isDeleting;
+                setTimeout(typeWriter, 500);
+            }
         }
+        typeWriter();
+    } else {
+        console.error("Element '.Typewriter__wrapper' not found!");
     }
-
-    typeWriter(); 
 });
+
 
 
 // nav hide

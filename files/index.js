@@ -10,34 +10,29 @@ window.onscroll=function(){
 }
 
 // animation 
-const typewriterElement = document.querySelector(".Typewriter__wrapper");
-const text = "a proficient Data Analyst.";
-let index = 0;
-let isDeleting = false;
+document.addEventListener("DOMContentLoaded", function () {
+    const typewriterElement = document.querySelector(".Typewriter__wrapper");
+    const text = "a proficient Data Analyst.";
+    let index = 0;
+    let isDeleting = false;
 
-function typeWriter() {
-    typewriterElement.innerHTML = text.slice(0, index);
+    function typeWriter() {
+        typewriterElement.innerHTML = text.slice(0, index);
 
-    if (!isDeleting) {
-        if (index < text.length) {
+        if (!isDeleting && index < text.length) {
             index++;
             setTimeout(typeWriter, 100);
-        } else {
-            isDeleting = true;
-            setTimeout(typeWriter, 1000); // Pause before deleting
-        }
-    } else {
-        if (index > 0) {
+        } else if (isDeleting && index > 0) {
             index--;
             setTimeout(typeWriter, 50);
         } else {
-            isDeleting = false;
-            setTimeout(typeWriter, 500); // Pause before typing again
+            isDeleting = !isDeleting;
+            setTimeout(typeWriter, isDeleting ? 1000 : 500);
         }
     }
-}
 
-typeWriter();
+    typeWriter(); 
+});
 
 
 // nav hide
